@@ -29,9 +29,9 @@ public class TestMybatis {
   
     @Test  
     public void test1() {  
-        User user = userService.getUserById(1);  
+      //  User user = userService.getUserById(1);  
         // System.out.println(user.getUserName());  
         // logger.info("Öµ£º"+user.getUserName());  
-        logger.info(JSON.toJSONString(user));  
+        //logger.info(JSON.toJSONString(user));  
     }  
 }

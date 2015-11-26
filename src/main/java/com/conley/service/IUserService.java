@@ -1,8 +1,10 @@
 package com.conley.service;
 
+import java.util.List;
+
 import com.conley.pojo.User;
 
 public interface IUserService {
-	public User getUserById(int userId);
+	public List<User> findAll();
 }
 
