@@ -9,7 +9,7 @@ public class Test {
 	@RequestMapping("/hello")
 	public ModelAndView hello(){
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("meaasge","zhukanmgli");
+		mv.addObject("message","zhukanmgli");
 		mv.setViewName("hello");
 		return mv;
 	}	
