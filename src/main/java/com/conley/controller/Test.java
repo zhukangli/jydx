@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class Test {
 	@RequestMapping(value="/hello")
 	public ModelAndView handleRequest(HttpServletRequest req, HttpServletResponse resp) throws
-	Exception {
+	Exception {   
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("message","zhukanmgli");
 		mv.setViewName("hello");
