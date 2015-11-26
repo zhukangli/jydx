@@ -15,7 +15,7 @@ public class Test {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("message","zhukanmgli");
 		mv.setViewName("hello");
-		return mv;
+		return mv; 
 	}	
 
 }
