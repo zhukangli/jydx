@@ -16,18 +16,12 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 	<!-- 打开自动扫描 -->
 	<context:component-scan base-package="com.conley.controller"/>
 	
-	<!-- 打开注解 -->
-	<context:annotation-config/>
-	
+	<!-- 不过滤静态页面 -->
 	<mvc:default-servlet-handler/>
 	
-	<!--可以代替下面两种  -->
+	<!--注册handlerMapping，HandlerAdaptor，扫描controller  -->
 	<mvc:annotation-driven/>
 	
-	<!-- HandlerMapping	注解使用的mapping/>-->
-	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
-	<!-- HandlerAdapter	注解使用的Adapter />-->
-	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
 
 	<!-- ViewResolver 我这里准备用html -->
 	<bean
@@ -37,8 +31,6 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<!-- 声明事务 -->
-	<tx:annotation-driven/>
 
 
 
