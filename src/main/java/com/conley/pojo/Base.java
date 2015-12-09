@@ -1,6 +1,6 @@
 package com.conley.pojo;
 
-public abstract class Base {
+public class Base {
 	private String id;
 	private String creator;
 	private String create_time;
