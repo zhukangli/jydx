@@ -1,16 +1,10 @@
 package com.conley.pojo;
 
-public class User {
-	private Integer id;
+public class User extends Base{
 	private String user_name ;
 	private String password ;
 	private Integer age ;
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 	public String getUser_name() {
 		return user_name;
 	}
